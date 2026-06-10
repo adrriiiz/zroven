@@ -1,0 +1,13 @@
+{
+  "name": "zroven",
+  "version": "1.0.0",
+  "description": "Zrøven – Minecraft Plugin Store (Coming Soon)",
+  "scripts": {
+    "build": "echo 'Static site, no build needed'",
+    "start": "npx serve public",
+    "dev": "npx live-server public"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
