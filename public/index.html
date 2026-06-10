@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zrøven – La tienda de plugins para Minecraft. Próximamente." />
+  <title>Zrøven – Plugins para Minecraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient blobs -->
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Zr&#248;ven</a>
+      <span class="nav-badge">Próximamente</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container" style="display:flex;flex-direction:column;align-items:center;">
+
+      <span class="hero-eyebrow">
+        <span class="dot"></span>
+        Plugin Store · En construcción
+      </span>
+
+      <h1 class="hero-title">
+        <span class="glitch" data-text="Zrøven">Zr&#248;ven</span>
+      </h1>
+
+      <p class="hero-sub">
+        El marketplace definitivo para <strong>plugins de Minecraft</strong>.
+        Encuentra, descarga e instala los mejores plugins para tu servidor.
+        <br>Estamos preparando algo grande.
+      </p>
+
+      <!-- SOON CARD -->
+      <div class="soon-wrap">
+        <div class="soon-card">
+          <h2>Avísame cuando abra</h2>
+          <p>
+            Deja tu correo y serás de los primeros en acceder el día del lanzamiento.
+            Sin spam, solo la señal cuando estemos listos.
+          </p>
+          <form id="notifyForm" class="email-form" novalidate>
+            <input
+              type="email"
+              id="emailInput"
+              class="email-input"
+              placeholder="tu@correo.com"
+              autocomplete="email"
+              aria-label="Dirección de correo"
+              required
+            />
+            <button type="submit" class="btn-notify">Notifícame</button>
+          </form>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES PREVIEW -->
+  <section class="features">
+    <div class="container">
+      <p class="section-label">Lo que viene</p>
+      <h2>Todo lo que necesita tu servidor</h2>
+
+      <div class="features-grid">
+
+        <div class="feat-item">
+          <span class="feat-icon">&#9881;&#65039;</span>
+          <h3>Plugins verificados</h3>
+          <p>Cada plugin pasa por revisión de seguridad antes de publicarse. Sin malware, sin sorpresas.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+        <div class="feat-item">
+          <span class="feat-icon">&#128269;</span>
+          <h3>Búsqueda avanzada</h3>
+          <p>Filtra por versión de Minecraft, categoría, popularidad o compatibilidad con tu setup.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+        <div class="feat-item">
+          <span class="feat-icon">&#128260;</span>
+          <h3>Actualizaciones automáticas</h3>
+          <p>Mantén tus plugins al día con un solo clic. Sin descargas manuales ni versiones desfasadas.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+        <div class="feat-item">
+          <span class="feat-icon">&#128101;</span>
+          <h3>Comunidad de creadores</h3>
+          <p>Publica tus propios plugins, recibe feedback y construye reputación en la comunidad.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+        <div class="feat-item">
+          <span class="feat-icon">&#127760;</span>
+          <h3>Compatible con todo</h3>
+          <p>Spigot, Paper, Purpur, Bukkit. Zrøven soporta los forks más populares desde el día uno.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+        <div class="feat-item">
+          <span class="feat-icon">&#128274;</span>
+          <h3>Licencias claras</h3>
+          <p>Cada plugin muestra su licencia de forma legible. Sabe exactamente qué puedes hacer con él.</p>
+          <span class="feat-tag">Pronto</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Zr<span>&#248;</span>ven</span>
+      <p>&copy; 2025 Zrøven. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- Reveal animation styles (inline to avoid FOUC) -->
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    nav.scrolled { border-bottom-color: rgba(42,46,58,0.8); }
+  </style>
+
+</body>
+</html>
