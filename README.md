@@ -1,6 +1,6 @@
 # Zrøven
 
-Plugin store de Minecraft — landing "coming soon".
+Game Piracy Web — landing "coming soon".
 
 ## Estructura
 
